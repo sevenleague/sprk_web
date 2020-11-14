@@ -1,4 +1,4 @@
-# Tailwind CSS example
+# SPRK
 
 This is an example of using [Tailwind CSS](https://tailwindcss.com) in a Next.js project.
 
