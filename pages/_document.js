@@ -22,7 +22,6 @@ class MyDocument extends Document {
         </Head>
         <body>
           <Main />
-          <div id="player" />
           <NextScript />
         </body>
       </Html>
