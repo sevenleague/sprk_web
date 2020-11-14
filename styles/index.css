@@ -1,0 +1,52 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write your own custom component styles here */
+.btn-blue {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+
+@font-face {
+  font-family: "Inter";
+  src: url("/Inter-VariableFont_slnt,wght.ttf");
+}
+
+@font-face {
+  font-family: "Inter Black";
+  src: url("/Inter-Black-slnt=0.ttf");
+}
+
+.find__your {
+  font-family: 'Inter Black';
+  font-size: 5rem;
+}
+
+body {
+  background: linear-gradient(180deg, rgba(113, 192, 249, 0.77) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #3B2BE9 0%, #FFAAA5 100%), #C4C4C4; 
+  min-height: 100vh;
+  font-family: 'Inter';
+}
+
+.sprk__logo {
+  width: auto;
+  height: 75px;
+}
+
+.blurb p {
+  @apply mb-4 text-white text-lg;
+}
+
+.blurb a {
+  @apply text-sprk-blue underline;
+}
