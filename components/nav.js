@@ -22,12 +22,12 @@ const subLinks = [
 ]
 
 
-export default function Nav() {
+export default function Nav({navOpen, isSm}) {
   const router = useRouter()
   return (
-    <nav>
-      <div className="flex justify-end items-center p-8 flex flex-col md:flex-row">
-        <div className="flex justify-center items-center mb-4 md:mb-0">
+    <nav className="nav" className={`nav ${navOpen ? 'nav--is-open' : ''} ${isSm ? 'is--small' : ''}`}>
+      <div className="flex justify-end items-center md:p-8 flex flex-col md:flex-row">
+        <div className="flex justify-center flex items-center mb-4 md:mb-0">
           <div className="mr-4 cursor-pointer">
             <Link href="/">
               <a href="/">
@@ -35,11 +35,14 @@ export default function Nav() {
               </a>
             </Link>
           </div>
-          <div>
+          <div className="hidden md:block">
             <Dropdown links={subLinks} active={router.pathname}/>
           </div>
         </div>
-        <ul className="flex justify-between items-center space-x-4">
+        <ul className="flex justify-between flex-col md:flex-row items-center md:space-x-4 space-y-2 md:space-y-0 mb-2 md:mb-0">
+          <li className="block md:hidden">
+            <Dropdown links={subLinks} active={router.pathname}/>
+          </li>
           {links.map(({ href, label }) => {
             const isActive = router.pathname === href
             return (

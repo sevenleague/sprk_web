@@ -4,8 +4,8 @@ export default function Dictionary() {
   return (
     <Layout>
        <div className="py-20 px-12 md:px-32">
-        <div className="text-6xl text-center font-bold text-white find__your">
-          <h1>
+        <div className="md:text-center font-bold text-white find__your">
+          <h1 className="text-5xl md:text6xl mb-2 md:mb-0">
             Dictionary
           </h1>
         </div>

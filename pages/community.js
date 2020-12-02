@@ -4,8 +4,8 @@ export default function Community() {
   return (
     <Layout>
       <div className="py-20 px-12 md:px-32">
-        <div className="text-6xl text-center font-bold text-white find__your">
-          <h1>
+        <div className="md:text-center font-bold text-white find__your">
+          <h1 className="text-5xl mb-2 md:mb-0 md:text-6xl">
             Community Guidelines
           </h1>
         </div>

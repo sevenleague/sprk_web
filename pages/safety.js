@@ -4,13 +4,13 @@ export default function Safety() {
   return (
     <Layout>
       <div className="py-20 px-12 md:px-32">
-        <div className="text-6xl text-center font-bold text-white find__your">
-          <h1>
+        <div className="md:text-center font-bold text-white find__your">
+          <h1 className="text-5xl mb-2 md:mb-0 md:text-6xl">
             Safety tips
           </h1>
         </div>
         <div className="blurb">
-          <h4 className="font-bold text-4xl text-white mb-4">The prospect of being on Sprk, chatting with matches, and going on first dates is thrilling! Maybe you’ll meet your soulmate, your next significant other; a friend with benefits, or simply a friend; Maybe it’ll just be a few texts, or it might trail on for days on end.</h4>
+          <h4 className="font-bold text-2xl md:text-4xl text-white mb-4">The prospect of being on Sprk, chatting with matches, and going on first dates is thrilling! Maybe you’ll meet your soulmate, your next significant other; a friend with benefits, or simply a friend; Maybe it’ll just be a few texts, or it might trail on for days on end.</h4>
           <p>But such activities carry certain risks, and could lead to unintended, unsafe, and potentially dangerous/harmful situations. We cannot control the actions of others, including yours, so we’ve put together some safety advice that will make your experience a little safer and more comfortable.</p>
 
           <h4 className="text-black font-bold text-xl">In general:</h4>

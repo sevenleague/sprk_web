@@ -50,3 +50,75 @@ body {
 .blurb a {
   @apply text-sprk-blue underline;
 }
+
+
+/* NAV */
+
+.nav {
+  @apply pt-2 order-first w-full absolute;
+  right: 0;
+  top: -150%;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 200ms, opacity 200ms, visibility 200ms;
+}
+
+.nav--is-open {
+  top: 3rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-toggle {
+  @apply fixed z-50 flex items-center justify-center w-full;
+  top: 1rem;
+  mix-blend-mode: difference;
+}
+
+
+.is--small {
+  @apply bg-gray-100
+}
+
+
+@screen md {
+
+  .is--small {
+    @apply bg-transparent
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav {
+    @apply relative;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-width {
+    max-width: 340px;
+  }
+
+  .nav__image {
+    @apply justify-end;
+    display: flex;
+    position: fixed;
+    bottom: 12rem;
+    right: 1rem;
+    width: 320px;
+  }
+
+  .nav__image img {
+    @apply object-contain mb-0;
+    width: 100%;
+  }
+
+  .nav--is-open {
+    @apply top-0
+  }
+}
+
+
+/* END NAV */

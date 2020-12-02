@@ -5,7 +5,7 @@ export default function Team() {
     <Layout>
       <div className="py-20 flex flex-col content-center items-center justify-center">
         <div className="text-6xl text-center font-bold text-white find__your">
-          <h1>
+          <h1 className="text-5xl md:text6xl mb-2 md:mb-0">
             Our team
           </h1>
         </div>
